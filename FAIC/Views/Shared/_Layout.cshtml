@@ -38,5 +38,23 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#target1").click(function () {
+                $("#input").val("name_desc");
+                $( "#target" ).submit();
+            });
+            $("#target2").click(function () {
+                $("#input").val("UnitPrice");
+
+                $( "#target" ).submit();
+            });
+            $("#target3").click(function () {
+                $("#input").val("");
+
+                $( "#target" ).submit();
+            });
+        })
+    </script>
 </body>
 </html>

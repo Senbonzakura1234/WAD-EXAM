@@ -15,9 +15,21 @@ namespace FAIC.Controllers
         private readonly FAICContext _db = new FAICContext();
 
         // GET: Products
-        public ActionResult Index()
+        public ActionResult Index(string sortOrder)
         {
-            var products = _db.Products.Include(p => p.Category);
+            var products = from s in _db.Products select s;
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    products = products.OrderByDescending(s => s.Name);
+                    break;
+                case "UnitPrice":
+                    products = products.OrderByDescending(s => s.UnitPrice);
+                    break;
+                default:
+                    products = products.OrderBy(s => s.UnitsInStock);
+                    break;
+            }
             return View(products.ToList());
         }
 

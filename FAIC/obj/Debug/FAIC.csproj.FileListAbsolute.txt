@@ -77,3 +77,4 @@ C:\Users\Aspire A315-51\source\repos\FAIC\FAIC\obj\Debug\FAIC.csproj.CoreCompile
 C:\Users\Aspire A315-51\source\repos\FAIC\FAIC\obj\Debug\FAIC.csproj.CopyComplete
 C:\Users\Aspire A315-51\source\repos\FAIC\FAIC\obj\Debug\FAIC.dll
 C:\Users\Aspire A315-51\source\repos\FAIC\FAIC\obj\Debug\FAIC.pdb
+C:\Users\Aspire A315-51\source\repos\FAIC\FAIC\obj\Debug\FAIC.csprojAssemblyReference.cache
